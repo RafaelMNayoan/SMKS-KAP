@@ -1,0 +1,32 @@
+.organization-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyelaraskan semua elemen ke tengah */
+}
+
+.position-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.position {
+    margin: 10px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1; /* Membuat posisi memiliki lebar yang sama */
+}
+
+.connector {
+    width: 2px; /* Lebar garis */
+    height: 50px; /* Panjang garis */
+    background-color: #333; /* Warna garis */
+    position: absolute;
+    left: 50%;
+    top: 100%; /* Garis di bawah posisi */
+    transform: translateX(-50%);
+    z-index: -1; /* Past ikan garis berada di belakang teks */
+}
